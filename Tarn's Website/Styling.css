@@ -1,0 +1,123 @@
+/*CSS Code for Tarn's Website*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+body{
+	background-color: #471902 /*white*/;
+	font-family: 'Roboto Slab', serif;
+}
+
+h1{
+	text-align: center;
+}
+
+.banner{
+	object-fit: cover;
+	border-top: 25px;
+	border-bottom: 25px;
+	
+	height: 40%;
+	width: 100%;
+}
+
+/*Style for the actual dropdown button*/
+.dropbtn{
+	background-color: black;
+	background-image: ;
+	color: white;
+	font-family:'Roboto Slab', serif;
+	font-size: 16px;
+	width:100%;
+	padding: 16px;
+	border: 0px;
+	transition: 1s;
+}
+
+/*This container <div> - needed to position the dropdown content*/
+.dropdown{
+	text-align: center;
+	/*border-left:*/
+}	
+
+/*Dropdown Content (Hidden by Default)*/
+.dropdown-content{
+	display:none;
+	text-align: center;
+	position: relative;
+	background-color: black;
+	transition:1s;
+}
+
+/*Links inside the dropdown*/
+.dropdown-content a{
+	color: white;
+	padding: 16px;
+	text-decoration: none;
+	display: block;
+	transition:1s;
+}
+
+/*Change color of dropdown links on hover*/
+.dropdown-content a:hover {background-color: #e6ad67; transition:1s;}
+
+/*Show the dropdownmenu on hover*/
+.dropdown:hover .dropdown-content{display:block;}
+
+/*Change the background color of the dropdown button when the dropdown content is shown*/
+/*.dropdown:hover .dropbtn{background-color: blue;}*/
+
+.mainpage{
+	background-image: url('UtilityImages/background2.png');
+	background-size: 100%;
+	margin: 0 auto;
+	text-align: center;
+	
+	height: 100%;
+	width: 50%;	
+}
+
+.presentation{
+	display: block;
+	padding: 0%;
+	color: white;
+}
+
+.medialinks{
+	display: block;
+	text-align: center;
+	position: relative;
+	bottom:20%;
+	/*margin-left: 10px;*/
+}
+
+.medialogo{
+	padding-right: 20px;
+}
+
+/*Flex allows the eleme to be controlled as a flex box. The items in the container will follow the flex layout,
+By default the items will move from left to right, there is no wrapping. They will behave as if in row by default. 
+They can display either as in row or column*/
+.container{
+	display: flex; /*creates flex item*/
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.glink{
+	display: contents;
+}
+
+
+/*Sizing the images on the webpages to a workable size*/
+/*Some Images are 1080 by 24, others are are A4 2480 by 3508*/
+.gpic{
+	max-width: 20%;	
+	padding: 1%;
+	border:2%;
+}
+
+img:hover{
+	opacity: 0.5;
+	transition: 0.9s;
+}
